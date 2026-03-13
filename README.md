@@ -25,14 +25,22 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+
+**Game’s Purpose**
+The purpose of the game is for the player to guess a secret number within a range based on the selected difficulty level. The game gives hints after each guess to tell the player if the guess is too high or too low. The player must guess the correct number before running out of attempts while trying to earn the highest score possible.
+
+**Bugs I Found**
+When I tested the game, I noticed the hint logic was backwards, so a guess that was too high told the player to go higher instead of lower. The attempt counter also started at one instead of zero, which meant the player lost an attempt before making a guess. I also saw that the game allowed guesses outside the allowed range and that invalid inputs could count as attempts.
+
+**Fixes I Applied**
+I fixed the hint logic so the directions correctly match whether the guess is too high or too low. I changed the attempt counter so it starts at zero and only increases when a valid guess is entered. I also added input validation so only whole numbers inside the allowed range are accepted and invalid inputs do not count as attempts.
+
+
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+
 
 ## 🚀 Stretch Features
 
-- [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
+
